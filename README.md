@@ -14,7 +14,6 @@
 
 3. device 실행
 flask 사용 등 과정에서 sudo 권환이 필요
-sudo python3 iot_device.py
 <pre><code>
     sudo python3 iot_device.py
   </code>
