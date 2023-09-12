@@ -10,7 +10,7 @@
   sudo netstat -anlp | grep:1883
   pkill mosquitto
   </code>
-  </pre
+  </pre>
 
 2. device 실행
 flask 사용 등 과정에서 sudo 권환이 필요
