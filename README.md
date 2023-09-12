@@ -1,16 +1,15 @@
 # iot
 
 1. mosquitto 실행
-'''
-mosquitto
-'''
+  mosquitto
+
 안되면(포트가 사용중이라면) 어떤 프로세스가 사용중인지 확인하기
 '''
 sudo netstat -anlp | grep:1883
 pkill mosquitto
 '''
 
-2. device 실행
+3. device 실행
 flask 사용 등 과정에서 sudo 권환이 필요
 '''
 sudo python3 iot_device.py
