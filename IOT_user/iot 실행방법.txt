@@ -1,0 +1,20 @@
+iot 실행방법
+1. mosquitto 실행
+mosquitto
+
+안될때(포트가 사용중)
+netstat -anlp | grep :1883
+을 통해 1883 포트가 어떤 프로세스에서 사용중인지 확인하기
+pkill mosquitto
+을 통해 프로세스를 종료하기
+
+2. device 실행
+sudo python3 iot_device.py
+flask사용 등 과정에서 sudo 권환이 필요함
+
+3. sensor 실행
+python3 iot_sensor.py
+
+
+4. curl 을 통해 GET요청 보내기
+curl -X GET -H "Content-Type: application/json" -d '{"data": "on"}' "127.0.0.1:80/registration/bulbs/bulb1"
